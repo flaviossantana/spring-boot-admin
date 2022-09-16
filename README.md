@@ -1,4 +1,4 @@
-# Spring Boot Admin
+# Spring Boot Admin [codecentric.github.io](https://codecentric.github.io/spring-boot-admin/2.7.3/)
 
 ## O que é o Spring Boot Admin?
 
