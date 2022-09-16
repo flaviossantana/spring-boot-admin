@@ -33,3 +33,22 @@ public  class  SpringBootAdminApplication {
   }
 }
 ```
+
+## Registrando aplicativos cliente
+Para registrar seu aplicativo no SBA Server, você pode incluir o SBA Client ou usar o Spring Cloud Discovery (por exemplo, Eureka, Consul, …​). Há também uma opção simples usando uma configuração estática no lado do servidor SBA.
+
+1. Adicione spring-boot-admin-starter-client às suas dependências:
+```xml
+<dependency>
+   <groupId>de.codecentric</groupId>
+   <artifactId>spring-boot-admin-starter-client</artifactId>
+   <version>2.7.4</version>
+</dependency>
+```
+
+2. Habilite o SBA Client configurando a URL do Spring Boot Admin Server:
+```properties
+spring.boot.admin.client.url=http://localhost:8080  
+management.endpoints.web.exposure.include=*  
+management.info.env.enabled=true 
+```
